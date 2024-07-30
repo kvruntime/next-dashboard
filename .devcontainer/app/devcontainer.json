@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "dockerComposeFile":["../docker-compose.yml"],
+  "shutdownAction": "stopCompose",
+  "service": "app",
+  "workspaceFolder": "/workspaces/app",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "ppa": true,
+      "version": "os-provided"
+    },
+    "ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {
+      "setLocale": true,
+      "theme": "robbyrussell",
+      "plugins": "git docker",
+      "desiredLocale": "en_US.UTF-8 UTF-8"
+    }
+  },
+  "postCreateCommand": "pnpm i"
+} .
