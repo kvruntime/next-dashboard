@@ -1,7 +1,0 @@
-{
-  "name": "db",
-  "dockerComposeFile":["../docker-compose.yml"],
-  "shutdownAction": "stopCompose",
-  "service": "db",
-  "workspaceFolder": "/"
-}

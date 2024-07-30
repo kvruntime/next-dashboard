@@ -1,9 +1,12 @@
 {
   "name": "app",
   "dockerComposeFile":["../docker-compose.yml"],
-  "shutdownAction": "stopCompose",
-  "service": "app",
-  "workspaceFolder": "/workspaces/app",
+  "build":{
+    "dockerfile":"Dockerfile"
+  },
+  // "shutdownAction": "stopCompose",
+  // "service": "app",
+  // "workspaceFolder": "/workspaces/app",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
       "ppa": true,
@@ -32,4 +35,4 @@
       ]
     }
   }
-} .
+} 
