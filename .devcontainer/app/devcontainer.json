@@ -16,5 +16,20 @@
       "desiredLocale": "en_US.UTF-8 UTF-8"
     }
   },
-  "postCreateCommand": "pnpm i"
+  "postCreateCommand": "npm -i g pnpm && pnpm i",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "naumovs.color-highlight",
+        "pranaygp.vscode-css-peek",
+        "ecmel.vscode-html-css",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "Zignd.html-css-class-completion",
+        "ms-vscode.vscode-typescript-next",
+        "ms-vscode.js-debug-nightly",
+        "idered.npm",
+        "ionutvmi.path-autocomplete"
+      ]
+    }
+  }
 } .
