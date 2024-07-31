@@ -3,18 +3,18 @@ services:
   app:
     image: node:22-bullseye
     command: sleep infinity
-    network_mode: service:db
+    # network_mode: service:db
     volumes:
       - ../:/workspaces/app:cached
     env_file:
       - ../.vercel.env
   
-  db:
-    image: postgres:16-alpine
-    command: sleep infinity
-    ports:
-      - 5432:5432
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
+  # db:
+  #   image: postgres:16-alpine
+  #   command: sleep infinity
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres
+  #     - POSTGRES_DB=postgres
