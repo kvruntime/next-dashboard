@@ -1,9 +1,6 @@
 {
   "name": "app",
   "dockerComposeFile":["./docker-compose.yml"],
-  // "build":{
-  //   "dockerfile":"Dockerfile"
-  // },
   "shutdownAction": "stopCompose",
   "service": "app",
   "workspaceFolder": "/workspaces/app",
@@ -32,7 +29,8 @@
         "ms-vscode.js-debug-nightly",
         "idered.npm",
         "ionutvmi.path-autocomplete",
-        "christian-kohler.npm-intellisense"
+        "christian-kohler.npm-intellisense",
+        "esbenp.prettier-vscode"
       ]
     }
   }
