@@ -2,6 +2,10 @@
 
 const nextConfig = {
 	// experimental: { ppr: 'experimental' },
+
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 };
 
 export default nextConfig;

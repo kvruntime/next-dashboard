@@ -1,5 +1,15 @@
 import "@/app/ui/global.css"
 import {inter} from "@/app/ui/fonts"
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: { template: '%s | Acme Dashboard', default: "Acme Dashboard" },
+  description: "Small description",
+  metadataBase: new URL('https://domain.com')
+}
+
+
 
 export default function RootLayout({
   children,
